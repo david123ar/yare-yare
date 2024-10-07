@@ -4,14 +4,14 @@ Disallow: /sign-in
 Disallow: /sign-up
 Disallow: /random
 
-Sitemap: https://animoon.me/api/anime/sitemap
-Sitemap: https://animoon.me/api/anime/sitemap1
-Sitemap: https://animoon.me/api/anime/sitemap2
-Sitemap: https://animoon.me/api/anime/sitemap3
-Sitemap: https://animoon.me/api/anime/sitemap4
-Sitemap: https://animoon.me/api/anime/sitemap5
-Sitemap: https://animoon.me/api/anime/sitemap6
-Sitemap: https://animoon.me/api/anime/sitemap7
-Sitemap: https://animoon.me/api/anime/sitemap8
-Sitemap: https://animoon.me/api/anime/sitemap9
-Sitemap: https://animoon.me/api/anime/sitemap10
+Sitemap: https://kaidox.xyz/api/anime/sitemap
+Sitemap: https://kaidox.xyz/api/anime/sitemap1
+Sitemap: https://kaidox.xyz/api/anime/sitemap2
+Sitemap: https://kaidox.xyz/api/anime/sitemap3
+Sitemap: https://kaidox.xyz/api/anime/sitemap4
+Sitemap: https://kaidox.xyz/api/anime/sitemap5
+Sitemap: https://kaidox.xyz/api/anime/sitemap6
+Sitemap: https://kaidox.xyz/api/anime/sitemap7
+Sitemap: https://kaidox.xyz/api/anime/sitemap8
+Sitemap: https://kaidox.xyz/api/anime/sitemap9
+Sitemap: https://kaidox.xyz/api/anime/sitemap10
