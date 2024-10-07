@@ -1,17 +1,10 @@
-import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+
 import { NextResponse } from "next/server";
 
 let randomIds = [];
 let currentIndex = 0;
 
 export async function middleware(request) {
-  const isProtectedRoute = createRouteMatcher([
-    "/user/profile(.*)",
-    "/user/continue-watching(.*)",
-    "/user/watch-list(.*)",
-    "/user/notification(.*)",
-    "/user/settings(.*)",
-  ]);
 
   const { pathname } = request.nextUrl;
 
@@ -61,12 +54,5 @@ export async function middleware(request) {
     return NextResponse.redirect(new URL(`/${nextId}`, request.url), 301);
   }
 
-  // Protect user routes with Clerk middleware
-  return clerkMiddleware((auth, req) => {
-    if (isProtectedRoute(req)) auth().protect();
-  })(request);
 }
 
-export const config = {
-  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
-};

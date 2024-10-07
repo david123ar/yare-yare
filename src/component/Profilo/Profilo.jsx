@@ -9,20 +9,9 @@ import {
   FaUser,
 } from "react-icons/fa";
 import useAnime from "@/hooks/useAnime";
-import { useClerk } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function Profilo(props) {
-  const { getUsers } = useAnime();
-  const { signOut } = useClerk()
-  const [user, setUser] = useState([]);
-  const fetchUub = async () => {
-    let dat = await getUsers();
-    setUser(dat);
-  };
-  useEffect(() => {
-    fetchUub();
-  }, []);
   return (
     <div
       className="profi"

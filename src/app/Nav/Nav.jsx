@@ -8,7 +8,7 @@ import Footer from "@/component/Footer/Footer";
 import Profilo from "@/component/Profilo/Profilo";
 import LoadingSpinner from "@/component/loadingSpinner";
 
-export default function Nav({ children, imageUrl, firstName, emailAdd }) {
+export default function Nav({ children }) {
   const params = useParams(); // Fetch the dynamic params
   const pathname = usePathname(); // Get the current URL path
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,7 +52,6 @@ export default function Nav({ children, imageUrl, firstName, emailAdd }) {
         isScrolled={isScrolled}
         sidebarIsOpen={sidebarIsOpen}
         setSidebarIsOpen={setSidebarIsOpen}
-        imageUrl={imageUrl}
         setProfiIsOpen={setProfiIsOpen}
         profiIsOpen={profiIsOpen}
         IsLoading={IsLoading}
@@ -60,8 +59,6 @@ export default function Nav({ children, imageUrl, firstName, emailAdd }) {
       <Profilo
         setProfiIsOpen={setProfiIsOpen}
         profiIsOpen={profiIsOpen}
-        firstName={firstName}
-        emailAdd={emailAdd}
         IsLoading={IsLoading}
       />
       <NavSidebar

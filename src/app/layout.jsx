@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
 import Navic from "@/app/Navic/page";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,11 +35,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider
-      appearance={{
-        baseTheme: dark,
-      }}
-    >
       <html lang="en">
         <head>
           <meta name="google-site-verification" content="x0aiWAODNGU-1UA2FXyORfyme9uWJir7mIMu8AMmLm4" />
@@ -52,7 +45,6 @@ export default function RootLayout({ children }) {
           </Navic>
         </body>
       </html>
-    </ClerkProvider>
   );
 }
 
