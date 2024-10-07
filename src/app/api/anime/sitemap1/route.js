@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"; 
 
 const apiUrl = "https://vimalking.vercel.app/api/az-list?page=";
-const baseUrl = "https://kaidox.xyz";
+const baseUrl = "https://kaidoo.online";
 
 // Helper function for retrying fetch in case of error
 const retryFetch = async (url, retries = 3, delay = 1000) => {
